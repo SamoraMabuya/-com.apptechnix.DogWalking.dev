@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/registerheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="54dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:gravity="center_horizontal"
+            android:text="Create New Account"
+            android:textColor="#202224"
+            android:textSize="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ca_arrow"
+            android:layout_width="34.5dp"
+            android:layout_height="26.5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="56.75dp"
+            android:background="@drawable/left_arrow"/>
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider"
+            android:layout_marginTop="100dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/firstnamefield"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/field_inputs"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/firstnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="122dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="First Name"
+            android:textColor="#202224"
+            android:textSize="12dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ca_lastnamefield"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="245dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/field_inputs"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ca_lastnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="12dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#202224"
+            android:layout_marginTop="223dp"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="true"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ca_emailfield"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/field_inputs"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ca_emailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#202224"
+            android:layout_marginTop="324dp"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="true"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ca_password"
+            android:layout_width="335dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="447dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/field_inputs"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ca_passwordtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create A Password"
+            android:textSize="12dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#202224"
+            android:layout_marginTop="425dp"
+            android:layout_marginStart="20dp"
+            android:textAllCaps="true"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/dogwalkerbox"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="515dp"
+            android:background="@drawable/checkbox" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dogwalkerlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="518dp"
+            android:fontFamily="@font/latosemibold"
+            android:text="Dog Walker"
+            android:textSize="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/dogownerrbox"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/checkbox" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dogownerlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="554dp"
+            android:fontFamily="@font/latosemibold"
+            android:text="Dog Walker"
+            android:textSize="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/agreementbox"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:background="@drawable/checkbox"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="669dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/agreementtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="672dp"
+            android:fontFamily="@font/latosemibold"
+            android:text="By signing up, you agree to Terms of use"
+            android:textSize="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registernow"
+            android:layout_width="319dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="704dp"
+            android:background="@drawable/loginbtn"
+            android:fontFamily="@font/lato_bold"
+            android:text="Regsiter Now"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:gravity="center"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already a member?"
+                android:textColor="#99202224"
+                android:layout_marginTop="757dp"
+                android:layout_marginStart="116dp"
+                android:fontFamily="@font/latosemibold"
+                android:textSize="12dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textColor="#E6202224"
+                android:layout_marginTop="757dp"
+                android:layout_marginStart="223dp"
+                android:fontFamily="@font/latosemibold"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,398 @@
+{
+	"info": {
+		"_postman_id": "98fdc4b6-1ee8-4111-a213-22058c91689b",
+		"name": "DogWalking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"email\":\"dogwalker@test.com\",\n    \"password\":\"test123\" }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://happy-paws.co.za/dogwalking/apis/v1/login.php",
+					"protocol": "https",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"login.php"
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"firstname\":\"test\",\n\"surname\":\"test1\",\n\"email\":\"dogowner@test.com\",\n\"mobile_number\":\"778888898\",\n\"address\":\"24 Kyalami Boulevard\",\n\"latitude\":\"2566\",\n\"longitude\":\"64646\",\n\"password\":\"test123\",\n\"profile_picture\": \"\",\n\"role_id\": \"2\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://happy-paws.co.za/dogwalking/apis/v1/create_user.php",
+					"protocol": "https",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"create_user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_pet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"owner\":\"3\",\"name\":\"test\",\"age\":\"1\",\"gender\":\"dog\",\"color\":\"black\",\"notes\":\"hi\",\"profile_picture\":\"\"}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://happy-paws.co.za/dogwalking/apis/v1/pet/add_pet.php",
+					"protocol": "https",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"pet",
+						"add_pet.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list_pets",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://happy-paws.co.za/dogwalking/apis/v1/pet/list_pets.php?id=3",
+					"protocol": "https",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"pet",
+						"list_pets.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_pet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"tommy\",\"age\":1,\"gender\":\"male\",\"color\":\"red\",\"notes\":\"xtz\",\"owner\":21,\"id\":40,\"pet_image\":\"https://firebasestorage.googleapis.com/v0/b/dogwalking-1f16b.appspot.com/o/dogWalkingUser%2FA342F89A-396B-4FC0-AD0A-BF12F3FF4919.jpg?alt=media&amp;token=56d2691c-a174-4b99-92f3-cdb9b7ea4d75\"}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://happy-paws.co.za/dogwalking/apis/v1/pet/update_pet.php",
+					"protocol": "https",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"pet",
+						"update_pet.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset_email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"dogowner@gmail.com\"}\n"
+				},
+				"url": {
+					"raw": "https://happy-paws.co.za/dogwalking/apis/v1/send_reset_email.php",
+					"protocol": "https",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"send_reset_email.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "request_walk",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n     \"owner\":\"1\",\n\t\"latitude\":\"1\",\n\t\"longitude\":\"5\",\n\t\"address\":\"black\",\n\t\"pets\":[ \"1\", \"2\", \"3\" ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://happy-paws.co.za/dogwalking/apis/v1/pet/request_walk.php",
+					"protocol": "http",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"pet",
+						"request_walk.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_walkernewreqpickup",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://happy-paws.co.za/dogwalking/apis/v1/newsfeed/update_walkernewreqpickup.php?",
+					"protocol": "http",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"newsfeed",
+						"update_walkernewreqpickup.php"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WalkerIPrequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://happy-paws.co.za/dogwalking/apis/v1/newsfeed/newsfeed_WalkerIPrequest.php?walker_id=9",
+					"protocol": "http",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"newsfeed",
+						"newsfeed_WalkerIPrequest.php"
+					],
+					"query": [
+						{
+							"key": "walker_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Walkernewrequests",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLm9yZyIsImF1ZCI6Imh0dHA6XC9cL2V4YW1wbGUuY29tIiwiaWF0IjoxMzU2OTk5NTI0LCJuYmYiOjEzNTcwMDAwMDAsImRhdGEiOnsiaWQiOiIzIiwiZmlyc3RuYW1lIjoidGVzdCIsInN1cm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoiZG9nV2Fsa2VyQHRlc3QuY29tIn19.kc88ghbHCkMZjTaAa20gpaiWjm6MB-r2vxgyk-_DK5s",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://happy-paws.co.za/dogwalking/apis/v1/newsfeed/newsfeed_Walkernewrequests.php?walker_id=9",
+					"protocol": "http",
+					"host": [
+						"happy-paws",
+						"co",
+						"za"
+					],
+					"path": [
+						"dogwalking",
+						"apis",
+						"v1",
+						"newsfeed",
+						"newsfeed_Walkernewrequests.php"
+					],
+					"query": [
+						{
+							"key": "walker_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

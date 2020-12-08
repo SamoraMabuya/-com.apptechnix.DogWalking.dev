@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">com.apptechnix.DogWalking.dev</string>
+    <string name="welcome_to_happy_paw">Welcome to Happy Paw</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="sign_in"><u>Sign in</u></string>
 </resources>
