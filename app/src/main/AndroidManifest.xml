@@ -10,6 +10,7 @@ package="com.apptechnixdogwalkingdev">
     android:theme="@style/Theme.ComapptechnixDogWalkingdev">
     <activity android:name=".Login_page">
         <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
 
         </intent-filter>
     </activity>
@@ -27,7 +28,7 @@ package="com.apptechnixdogwalkingdev">
     </activity>
     <activity android:name=".Register">
         <intent-filter>
-
+            <action android:name="android.intent.action.VIEW" />
         </intent-filter>
     </activity>
 
